@@ -94,7 +94,6 @@ void ARenderDataActor::BeginPlay()
 	// 构造 FStaticMeshSection
 	FStaticMeshSection& section = Sections.AddDefaulted_GetRef();
 
-	section.bEnableCollision = false;
 	// 计算三角面数 = 顶点数 / 3 ;
 	section.NumTriangles = vertex_list.Num() / 3;
 
